@@ -17,15 +17,45 @@
     <title>Bienvenue sur mon site - Charles Cantin - Photographe</title>
 </head>
 <body>
+    <header>
+        <img src="./logo.png" alt="" srcset="">
+        <!-- <img src="img/test1.jpg" alt="hello" srcset="" width="500px" height="250px"> -->
+    <!-- Navbar transparente-->
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bienvenue</a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuDeNavigation" aria-controls="menuDeNavigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+                <div class="collapse navbar-collapse" id="menuDeNavigation">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">PortFolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tarif-prestation.html">Tarifs & Prestations</a> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a> 
+                        </li>
+                    </ul>
+                </div>
 
+            </div>
+        </nav>
 
+    </header>
 
 
 <!-- JQuery-->
-<script src="lien//jquery-3.6.0.min.js"></script>
+<script src="lien/jquery-3.6.0.min.js"></script>
 <!-- Bootstrap JavaScript -->
-    <script src="lien//bootstrap.bundle.min.js"></script>
+    <script src="lien/bootstrap.bundle.min.js"></script>
 <!-- My JavaScript -->
     <script src="script.js"></script>
 
