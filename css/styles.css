@@ -33,4 +33,24 @@ ul {
 .custom-toggler.navbar-toggler {
   border: solid white 2px;
   margin-right: 10px;
+}
+
+.section__accueil__about {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.title_presentation {
+  margin-bottom: 50px;
+}
+
+.body_presentation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.accueil_photo_charles {
+  width: 200px;
+  height: 200px;
 }/*# sourceMappingURL=styles.css.map */
