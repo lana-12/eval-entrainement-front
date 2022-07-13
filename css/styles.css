@@ -1,0 +1,36 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background: grey url("../../../img/photo-appareil-2.jpg");
+  background-size: cover;
+}
+
+.header_title {
+  margin-top: 180px;
+}
+
+/* A voir*/
+.custom-toggler.navbar-toggler {
+  border: solid white 2px;
+  margin-right: 10px;
+}/*# sourceMappingURL=styles.css.map */
