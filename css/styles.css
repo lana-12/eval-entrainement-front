@@ -87,7 +87,6 @@ img {
 }
 
 .section__prestations {
-  background: grey url("../../../img/accueil/montpellier-bg-accueil-prestation-1200x800px.jpg");
   background-size: cover;
 }
 
@@ -95,7 +94,7 @@ img {
   width: 80%;
   margin: auto;
   height: auto;
-  background: white;
+  background: rgba(240, 211, 24, 0.9921568627);
 }
 
 .btn__section__prestation {
@@ -104,14 +103,14 @@ img {
 }
 
 .card__accueil__title {
-  background-color: #5B696B;
+  background-color: #e0c721;
   color: white;
 }
 
 .card__accueil__prestations {
   width: 18rem;
   height: auto;
-  box-shadow: 0px 5px 20px #999;
+  box-shadow: 0px 5px 20px #0f1010;
 }
 
 .card__accueil__prestations:hover .card__accueil__img img {
