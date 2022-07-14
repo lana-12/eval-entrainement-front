@@ -18,6 +18,10 @@ ul {
   list-style: none;
 }
 
+.center {
+  text-align: center;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -26,7 +30,7 @@ img {
 .header {
   width: 100%;
   height: 100vh;
-  background: grey url("../../../img/img-accueil-header.jpg");
+  background: grey url("../../../img/accueil/img-accueil-header.jpg");
   background-size: cover;
 }
 
@@ -38,6 +42,27 @@ img {
 .custom-toggler.navbar-toggler {
   border: solid white 2px;
   margin-right: 10px;
+}
+
+.galerie {
+  display: flex;
+  max-width: 1300px;
+  margin: 70px auto 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.items img {
+  width: 100%;
+  height: auto;
+}
+
+.items {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
 .section__accueil__about {
@@ -59,4 +84,55 @@ img {
 .accueil_photo_charles {
   width: 200px;
   height: 200px;
+}
+
+.section__prestations {
+  background: grey url("../../../img/accueil/montpellier-bg-accueil-prestation-1200x800px.jpg");
+  background-size: cover;
+}
+
+.background__accueil__prestation {
+  width: 80%;
+  margin: auto;
+  height: auto;
+  background: white;
+}
+
+.btn__section__prestation {
+  background-color: #5B696B;
+  color: white;
+}
+
+.card__accueil__title {
+  background-color: #5B696B;
+  color: white;
+}
+
+.card__accueil__prestations {
+  width: 18rem;
+  height: auto;
+  box-shadow: 0px 5px 20px #999;
+}
+
+.card__accueil__prestations:hover .card__accueil__img img {
+  width: 160%;
+  filter: grayscale(0);
+}
+
+.card__accueil__img {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card__accueil__img img {
+  width: 150%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: grayscale(1);
+  transition-property: filter width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }/*# sourceMappingURL=styles.css.map */
