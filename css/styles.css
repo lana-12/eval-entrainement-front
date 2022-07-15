@@ -22,6 +22,10 @@ ul {
   text-align: center;
 }
 
+.m10px {
+  margin: 10px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -42,6 +46,19 @@ img {
 .custom-toggler.navbar-toggler {
   border: solid white 2px;
   margin-right: 10px;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.accueil__footer__contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  text-align: right;
 }
 
 .galerie {
@@ -65,6 +82,12 @@ img {
   flex-shrink: 0;
 }
 
+.btn__section__accueil {
+  background-color: #5B696B;
+  color: white;
+  box-shadow: 0px 5px 20px #080a0a;
+}
+
 .section__accueil__about {
   width: 100%;
   height: auto;
@@ -86,7 +109,8 @@ img {
   height: 200px;
 }
 
-.section__prestations {
+.section__prestations__accueil {
+  background: grey url("../../../img/accueil/bg-section-prestation.jpg");
   background-size: cover;
 }
 
@@ -94,23 +118,18 @@ img {
   width: 80%;
   margin: auto;
   height: auto;
-  background: rgba(240, 211, 24, 0.9921568627);
-}
-
-.btn__section__prestation {
-  background-color: #5B696B;
-  color: white;
+  background: white;
 }
 
 .card__accueil__title {
-  background-color: #e0c721;
+  background-color: rgba(251, 138, 1, 0.8431372549);
   color: white;
 }
 
 .card__accueil__prestations {
   width: 18rem;
   height: auto;
-  box-shadow: 0px 5px 20px #0f1010;
+  box-shadow: 0px 5px 20px #080a0a;
 }
 
 .card__accueil__prestations:hover .card__accueil__img img {
@@ -134,4 +153,8 @@ img {
   transition-property: filter width;
   transition-duration: 0.3s;
   transition-timing-function: ease;
+}
+
+.section__portfolio__accueil {
+  margin-top: 20px;
 }/*# sourceMappingURL=styles.css.map */
