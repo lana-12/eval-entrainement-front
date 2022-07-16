@@ -10,7 +10,7 @@
     <link href="lien/bootstrap.min.css" rel="stylesheet">
     
     <!-- MY CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styles.css">
     
     <!-- FAVICON a mettre ds img avant--> 
     <link rel="icon" type="image/png" href="/img/favicon.png">
@@ -19,7 +19,57 @@
 </head>
 <body>
     
+    <section class="wrapper ">
+        <nav>
+            <div class="items__portfolio">
+                <span class="item__portfolio active" data-name="all">Tout</span>
+                <span class="item__portfolio" data-name="portrait">Portrait</span>
+                <span class="item__portfolio" data-name="family">famille</span>
+                <span class="item__portfolio" data-name="baby">Bébé</span>
+                <span class="item__portfolio" data-name="couple">Couple</span>
+                <span class="item__portfolio" data-name="wedding">Mariage</span>
+                <span class="item__portfolio" data-name="baptism">Baptême</span>
+                <span class="item__portfolio" data-name="pregnancy">Grossesse</span>
+            </div>
+        </nav>
+<!-- filter images -->
+        <div class="gallery">
 
+            <!-- Category BAPTISM-->
+
+            <div class="image" data-name="baptism"><span><img 
+                src="img/bapteme/photo-bapteme-1-250x166px.jpg" alt="" srcset=""  id=""></span></div>
+
+            <!-- Category BABY-->
+            <div class="image" data-name="baby"><span><img 
+                src="img/bebe/photo-bebe-1-250x166px.jpg" alt="" srcset="" id=""></span></div>
+
+            <!-- Category COUPLE-->
+            <div class="image" data-name="couple"><span><img 
+                src="img/couple/photo-couple-1-250x166px.jpg" alt="" srcset=""  id=""></span></div>
+
+            <!-- Category FAMILLY-->
+            <div class="image" data-name="family"><span><img 
+                src="img/famille/photo-famille-1-250x166px.jpg" alt="" srcset=""  id=""></span></div>
+
+            <!-- Category PREGNANCY -->
+            <div class="image" data-name="pregnancy"><span><img 
+                src="img/grossesse/photo-grossesse-1-250x165px.jpg" alt="" srcset=""  id=""></span></div>
+
+            <!-- Category WEDDING -->
+            <div class="image" data-name="wedding"><span><img class="photos"
+                src="img/mariage/photo-mariage-1-250x351px.jpg" alt="" srcset=""  id=""></span></div>
+
+            <!-- Category PORTRAIT -->
+            <div class="image" data-name="portrait"><span><img class="photos"
+                src="img/portrait/photo-portrait-1-250x366px.jpg" alt="" srcset=""  id=""></span></div>
+
+
+
+
+        </div>
+
+    </section>
 
 
 
@@ -29,7 +79,7 @@
 <!-- Bootstrap JavaScript -->
     <script src="lien/bootstrap.bundle.min.js"></script>
 <!-- My JavaScript -->
-    <script src="script.js"></script>
+    <script src="gallery.js"></script>
 
 </body>
 </html>
