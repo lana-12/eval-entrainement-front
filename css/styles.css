@@ -42,16 +42,29 @@ img {
   margin-top: 180px;
 }
 
-/* A voir*/
-.custom-toggler.navbar-toggler {
-  border: solid white 2px;
-  margin-right: 10px;
+.header__portfolio {
+  width: 100%;
+  height: 40vh;
+  background-color: green;
 }
 
-.header__footer {
+.header__contact {
   width: 100%;
-  height: 100vh;
-  background-color: blue;
+  height: 50vh;
+  background: grey url("../../../img/bg-contact.jpg");
+  background-size: cover;
+  background-position-y: center;
+}
+
+.header__contact__title {
+  margin-top: 25px;
+  color: white;
+}
+
+.form__contact {
+  background-color: #5B696B;
+  color: white;
+  border-radius: 10px;
 }
 
 footer {
@@ -67,7 +80,7 @@ footer {
   text-align: right;
 }
 
-.galerie {
+.galerie__accueil__prestation {
   display: flex;
   max-width: 1300px;
   margin: 70px auto 0;
@@ -92,6 +105,18 @@ footer {
   background-color: #5B696B;
   color: white;
   box-shadow: 0px 5px 20px #080a0a;
+  /* btn menu*/
+}
+
+.custom-toggler.navbar-toggler {
+  border: solid white 2px;
+  margin-right: 10px;
+}
+
+.btn-form {
+  background-color: rgba(251, 138, 1, 0.8431372549);
+  color: white;
+  margin: 20px;
 }
 
 .section__accueil__about {
@@ -161,13 +186,8 @@ footer {
   transition-timing-function: ease;
 }
 
-.section__portfolio__accueil {
-  margin-top: 20px;
-}
-
 .wrapper {
-  margin: 100px auto;
-  max-width: 1100px;
+  margin: 10px;
 }
 
 .wrapper nav {
@@ -206,7 +226,7 @@ nav .items__portfolio .item__portfolio:hover {
 }
 
 .image {
-  width: 25%;
+  width: 33.3333333333%;
   padding: 7px;
 }
 

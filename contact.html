@@ -9,7 +9,7 @@
     <link href="lien/bootstrap.min.css" rel="stylesheet">
 
     <!-- MY CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- FAVICON a mettre ds img avant--> 
     <link rel="icon" type="image/png" href="/img/favicon.png">
@@ -20,7 +20,7 @@
 </head>
 <body>
 
-    <header class="header__footer">
+    <header class="header__contact">
     <!-- Navbar -->
         <nav class="navbar navbar-expand-md navbar-dark p-md-3  ">
             <div class="container-fluid">
@@ -49,31 +49,46 @@
                 </div>
             </div>
         </nav>
-
+        <h1 class="center header__contact__title">Contact</h1>
+            
     </header >
 
 
 
 
-    <h1>Site en cours de construction</h1>
-<main>
-    <form action="" method="" class="">
-        <fieldset>
-            <legend> Formulaire de contact</legend>
+<main >
+    <section class="contact__intro">
+        <h2 class="center">Maintenant c'est à vous ... </h2>
+        <p class="center">Parlez de vous, de votre futur projet. Je veux tout savoir ;)<br>Plus j'en sais sur vous et plus vos photos seront celles dont vous rêvez. </p>
+            
+    </section>
 
-                <div class="">
-                <label for="name">Votre nom</label>
-                <input type="text" name="name" id="name" required>
-                </div>
-                <div class="">
-                <label for="email">Enter your email: </label>
-                <input type="email" name="email" id="email" required>
-                </div>
-                <div class="">
-                <input type="submit" value="Subscribe!">
-                </div>
-        </fieldset>
-    </form>
+    
+    <section class="form__contact container-md ">
+    <div class="">
+        <form action="" method="" name="myForm ">
+            
+                <label for="name">Votre nom :</label>
+                <input class="form-control" type="text" name="name" id="name" placeholder="Entrer votre nom" required>
+            
+            
+                <label for="email">Votre email : </label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="Entrez votre adresse mail" required>
+            
+            
+                <label for="sujet">Votre sujet : </label>
+                <input class="form-control" type="text" name="sujet" id="sujet" placeholder="Entrez votre adresse mail" required>
+
+                <label for="message">Votre Message :  </label>
+                <textarea  rows="5" cols="33" class="message form-control" type="text" name="message" id="message" placeholder="Entrez votre adresse mail" required></textarea>
+            
+            <div class="center">
+                <button class="btn btn-form " type="submit" value="Envoyer">Envoyer</button>
+            </div>
+            
+        </form>
+    </div>
+    </section>
 </main>
 
 
