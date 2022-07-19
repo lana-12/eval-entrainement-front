@@ -87,9 +87,6 @@ function validateFields(input) {
         }
         return (true);
     }
-    let submit = document.getElementById('submit');
-    submit.addEventListener('click', ()=>{
-        alert('message envoyé')
-    });
+    
 }
  //=============== END - VALIDATION DES CHAMPS DU FORMULAIRE ===============//
