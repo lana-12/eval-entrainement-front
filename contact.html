@@ -62,7 +62,48 @@
         <p class="center">Parlez de vous, de votre futur projet. Je veux tout savoir ;)<br>Plus j'en sais sûr vous et plus vos photos seront celles dont vous rêvez. </p>
             
     </section>
+    <section class="form__contact container-md ">
 
+        <form action="" method="POST" id="contact" name="contact" data-netlify="true" needs-validation class="row" >
+            <div class="col-12">
+                <label for="name" class="form-label">Votre nom :</label>
+                <input class="form-control" type="text" name="name" id="name" placeholder="Entrer votre nom" >
+                <div class="invalid-feedback">
+                    Veuillez saisir un nom.
+                </div>   
+            </div>
+
+            <div class="col-12 mt-4">
+                <label for="email" class="form-label">Votre email : </label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="Entrez votre adresse mail" >
+                <div class="invalid-feedback">
+                    Veuillez saisir un email valide.
+                </div>
+            </div>
+            
+            <div class="col-12 mt-4">
+                <label for="sujet" class="form-label">Votre sujet : </label>
+                <input class="form-control" type="text" name="sujet" id="sujet" placeholder="Entrez votre adresse mail" >
+                <div class="invalid-feedback">
+                    Veuillez saisir un thème.
+                </div>
+            </div>
+
+            <div class="col-12 mt-4">
+                <label for="message" class="form-label">Votre Message :  </label>
+                <textarea  rows="5" cols="33" class="message form-control" type="text" name="message" id="message" placeholder="Entrez votre adresse mail" ></textarea>
+                <div class="invalid-feedback">
+                    Veuillez saisir votre message.
+                </div>
+            </div>
+
+            <div class="mx-auto">
+                <button class="btn btn-form " type="submit" id="submit" value="Envoyer">Envoyer</button>
+            </div>
+            
+        </form>
+
+    </section>
     
 </main>
 

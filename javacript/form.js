@@ -2,7 +2,7 @@
 (function () {
         'use strict'
 
-        let form = document.getElementById('contactForm');
+        let form = document.getElementById('contact');
 console.log(form)
         form.addEventListener('submit', function(event) {
             
