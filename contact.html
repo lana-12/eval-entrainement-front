@@ -58,39 +58,55 @@
 
 <main >
     <section class="contact__intro">
-        <h2 class="center">Maintenant c'est à vous ... </h2>
-        <p class="center">Parlez de vous, de votre futur projet. Je veux tout savoir ;)<br>Plus j'en sais sur vous et plus vos photos seront celles dont vous rêvez. </p>
+        <h2 class="center">Maintenant c'est à vous  </h2>
+        <p class="center">Parlez de vous, de votre futur projet. Je veux tout savoir ;)<br>Plus j'en sais sûr vous et plus vos photos seront celles dont vous rêvez. </p>
             
     </section>
 
-    
+    <!-- data-netlify="true" -->
     <section class="form__contact container-md ">
-    <div class="">
-        <form action="" method="" name="myForm " data-netlify="true">
-            
-                <label for="name">Votre nom :</label>
-                <input class="form-control" type="text" name="name" id="name" placeholder="Entrer votre nom" required>
-            
-            
-                <label for="email">Votre email : </label>
-                <input class="form-control" type="email" name="email" id="email" placeholder="Entrez votre adresse mail" required>
-            
-            
-                <label for="sujet">Votre sujet : </label>
-                <input class="form-control" type="text" name="sujet" id="sujet" placeholder="Entrez votre adresse mail" required>
 
-                <label for="message">Votre Message :  </label>
-                <textarea  rows="5" cols="33" class="message form-control" type="text" name="message" id="message" placeholder="Entrez votre adresse mail" required></textarea>
+        <form action="" method="POST" id="myForm" name="myForm" needs-validation class="row" >
+            <div class="col-12">
+                <label for="name" class="form-label">Votre nom :</label>
+                <input class="form-control" type="text" name="name" id="name" placeholder="Entrer votre nom" required>
+                <div class="invalid-feedback">
+                    Veuillez saisir un nom.
+                </div>   
+            </div>
+
+            <div class="col-12 mt-4">
+                <label for="email" class="form-label">Votre email : </label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="Entrez votre adresse mail" required>
+                <div class="invalid-feedback">
+                    Veuillez saisir un email valide.
+                </div>
+            </div>
             
-            <div class="center">
+            <div class="col-12 mt-4">
+                <label for="sujet" class="form-label">Votre sujet : </label>
+                <input class="form-control" type="text" name="sujet" id="sujet" placeholder="Entrez votre adresse mail" required>
+                <div class="invalid-feedback">
+                    Veuillez saisir un thème.
+                </div>
+            </div>
+
+            <div class="col-12 mt-4">
+                <label for="message" class="form-label">Votre Message :  </label>
+                <textarea  rows="5" cols="33" class="message form-control" type="text" name="message" id="message" placeholder="Entrez votre adresse mail" required></textarea>
+                <div class="invalid-feedback">
+                    Veuillez saisir votre message.
+                </div>
+            </div>
+
+            <div class="mx-auto">
                 <button class="btn btn-form " type="submit" value="Envoyer">Envoyer</button>
             </div>
             
         </form>
-    </div>
+
     </section>
 </main>
-
 
 
 
@@ -100,7 +116,7 @@
 <!-- Bootstrap JavaScript -->
     <script src="lien/bootstrap.bundle.min.js"></script>
 <!-- My JavaScript -->
-    <script src="script.js"></script>
+    <script src="javacript/form.js"></script>
 
 </body>
 </html>

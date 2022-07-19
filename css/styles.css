@@ -61,12 +61,6 @@ img {
   color: white;
 }
 
-.form__contact {
-  background-color: #5B696B;
-  color: white;
-  border-radius: 10px;
-}
-
 footer {
   margin-top: 50px;
 }
@@ -78,6 +72,14 @@ footer {
 
 .right {
   text-align: right;
+}
+
+.form__contact {
+  margin-top: 50px;
+  padding-top: 20px;
+  background-color: #5B696B;
+  color: white;
+  border-radius: 10px;
 }
 
 .galerie__accueil__prestation {
@@ -116,7 +118,7 @@ footer {
 .btn-form {
   background-color: rgba(251, 138, 1, 0.8431372549);
   color: white;
-  margin: 20px;
+  margin: 30px;
 }
 
 .section__accueil__about {
