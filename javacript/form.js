@@ -2,7 +2,7 @@
 (function () {
         'use strict'
 
-        let form = document.getElementById('contact');
+        let form = document.getElementById('formContact');
 console.log(form)
         form.addEventListener('submit', function(event) {
             
@@ -16,7 +16,6 @@ console.log(form)
                         input.classList.remove("is-valid");
                         input.classList.add("is-invalid");
                         input.nextElementSibling.style.display = 'block';
-                        input.nextElementSibling.style.color = 'black';
                     } 
                     else {
                         input.nextElementSibling.style.display = 'none';
