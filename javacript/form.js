@@ -2,7 +2,7 @@
 (function () {
         'use strict'
 
-        let form = document.getElementById('myForm');
+        let form = document.getElementById('contactForm');
 console.log(form)
         form.addEventListener('submit', function(event) {
             
@@ -16,6 +16,7 @@ console.log(form)
                         input.classList.remove("is-valid");
                         input.classList.add("is-invalid");
                         input.nextElementSibling.style.display = 'block';
+                        input.nextElementSibling.style.color = 'black';
                     } 
                     else {
                         input.nextElementSibling.style.display = 'none';
@@ -28,7 +29,7 @@ console.log(form)
 })()
     //=============== END - DECLARATION DU FORMULAIRE ===============//
 
-    
+
  //=============== START - FUNCTION VALIDATION  ===============//
     // Validation d'un champ REQUIRED
 function validateRequired(input) {
