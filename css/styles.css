@@ -58,55 +58,89 @@ img {
 
 .header__contact__title {
   margin-top: 25px;
-  color: white;
+  color: #fff;
 }
 
 footer {
   margin-top: 50px;
+  background-color: #5B696B;
+  color: #fff;
 }
 
 .accueil__footer__contact {
   display: flex;
-  flex-direction: column;
+  flex-direction: columns;
 }
 
 .right {
   text-align: right;
 }
 
+.footer__logo img {
+  width: 300px;
+  height: auto;
+}
+
+.contact__url__tel {
+  margin: 40px;
+}
+
+.contact__url__tel h4 {
+  margin-bottom: 20px;
+}
+
+.footer__reseaux__sociaux {
+  margin-top: 50px;
+}
+
+.accueil__footer__instagram {
+  padding: 50px;
+}
+
+.reseau2 {
+  font-size: 23px;
+}
+
+footer a:hover,
+.reseau2:hover {
+  color: rgba(251, 138, 1, 0.8431372549);
+  font-weight: 900;
+}
+
+.accueil__footer__menuNavigation {
+  margin-top: 50px;
+}
+
+.accueil__footer__menuNavigation li {
+  padding: 20px;
+}
+
+.separator__footer {
+  margin-top: 10px;
+  height: 2px;
+  border: none;
+  background: rgba(251, 138, 1, 0.8431372549);
+}
+
+.copyright {
+  font-size: 0.9em;
+  padding: 3px;
+}
+
 .form__contact {
   margin-top: 50px;
   padding-top: 20px;
   background-color: #5B696B;
-  color: white;
+  color: #fff;
   border-radius: 10px;
-}
-
-.galerie__accueil__prestation {
-  display: flex;
-  max-width: 1300px;
-  margin: 70px auto 0;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.items img {
-  width: 100%;
-  height: auto;
-}
-
-.items {
-  width: 300px;
-  height: 200px;
-  margin: 10px;
-  overflow: hidden;
-  flex-shrink: 0;
+  margin-bottom: 50px;
 }
 
 .btn__section__accueil {
   background-color: #5B696B;
   color: white;
   box-shadow: 0px 5px 20px #080a0a;
+  margin-top: 20px;
   /* btn menu*/
 }
 
@@ -117,7 +151,7 @@ footer {
 
 .btn-form {
   background-color: rgba(251, 138, 1, 0.8431372549);
-  color: white;
+  color: #fff;
   margin: 30px;
 }
 
@@ -151,18 +185,36 @@ footer {
   width: 80%;
   margin: auto;
   height: auto;
-  background: white;
+  background: #fff;
+}
+
+.galerie__accueil__prestation {
+  display: flex;
+  max-width: 1300px;
+  margin: 60px auto 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card__accueil__title {
-  background-color: rgba(251, 138, 1, 0.8431372549);
-  color: white;
+  color: #fff;
 }
 
 .card__accueil__prestations {
+  background-color: rgba(251, 138, 1, 0.8431372549);
+  border-radius: 2%;
+  overflow: hidden;
+  flex-shrink: 0;
   width: 18rem;
   height: auto;
   box-shadow: 0px 5px 20px #080a0a;
+}
+
+.card__accueil__prestations img {
+  width: 200px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card__accueil__prestations:hover .card__accueil__img img {
@@ -186,6 +238,17 @@ footer {
   transition-property: filter width;
   transition-duration: 0.3s;
   transition-timing-function: ease;
+}
+
+.section__info {
+  background-color: rgba(251, 138, 1, 0.8431372549);
+  color: #fff;
+  width: 80%;
+  height: auto;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 50px #080a0a;
+  border: solid #5B696B;
 }
 
 .wrapper {
