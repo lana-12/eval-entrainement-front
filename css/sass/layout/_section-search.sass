@@ -1,42 +1,49 @@
-//#fb8a01d7 
-.wrapper //a voir
-    margin: 10px 
-    
+.logo__portfolio
+    border-radius: 10px
+    max-width: 5rem
+    border: solid 2px $white
 
-.wrapper nav
+.portfolio__items
     display: flex
-    justify-content: center
+    justify-content: space-around
 
-nav .items__portfolio
-    display: flex
-    max-width: 720px
-    width: 100%
-    justify-content: space-between
-
-
-nav .items__portfolio .item__portfolio
-    padding: 7px 25px
+.item__portfolio
+    padding: 7px 10px
     font-size: 18px
     font-weight: 500
-    color: red
-    border: 2px solid red
+    color: black
+    border: 2px solid 
     border-radius: 50px
     cursor: pointer
     transition: all 0.3s ease
 
 nav .items__portfolio .active,
-    nav .items__portfolio .item__portfolio:hover
-    color: white
-    background: red 
+nav .items__portfolio .item__portfolio:hover
+    color: $white
+    background: $grey 
     
 .gallery
+    width: 80%
+    height: auto
+    margin-left: 10%
     display: flex
-    flex-wrap: wrap
+    justify-content: center
     margin-top: 30px
+    background-color: $oranger
+    box-shadow: 0px 5px 25px $boxShadow
+    border-radius: 5px
+    border: solid 1px $grey
 
 .image
-    width: calc(100% / 3)
     padding: 7px
+    
+.image img
+    border: solid 2px $white
+    width: 150px
+    height: 150px
+    object-fit: cover
+    overflow: hidden
+    transition: all 0.3s ease
 
 .image.hide
     display: none
@@ -50,15 +57,5 @@ nav .items__portfolio .active,
     100%
         transform: scale(1)
         
-.image span
-    display: flex
-    width: 100%
-    overflow: hidden
-
-.image img
-    width: 100%
-    vertical-align: middle
-    transition: all 0.3s ease
-
 .image:hover img
     transform: scale(1.1)

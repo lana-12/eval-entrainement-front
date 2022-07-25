@@ -28,9 +28,7 @@
         <!-- Navbar -->
             <nav class="navbar navbar-expand-md navbar-dark p-md-3  ">
                 <div class="container-fluid">
-                    
-                    <a class="navbar-brand ml-3 " href="index.html">Bienvenue sur mon Site</a>
-                
+                    <a class="navbar-brand ml-3 " href="index.html"><img src="/img/logo-grey.png" alt="Logo de Charles Cantin - Photographe - & lien retour à l'accueil " title="Logo de Charles Cantin - Photographe - & lien retour à l'accueil" class="logo__portfolio img-fluid" ></a>
                     <button class="navbar-toggler custom-toggler " type="button" data-toggle="collapse" data-target="#menuDeNavigation" aria-controls="menuDeNavigation" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -61,61 +59,71 @@
             </nav>
 
 <!-- Title + paragraph-->
-            <div class="header__portfolio__title text-white center">
-                <h1>Portfolio</h1>
-                <p>Cliquez sur la catégorie que vous souhaitez voir</p>   
+            <div class="header__portfolio__title">
+                <h1 class="mb-4 ">Portfolio</h1>
+                <section class=" container">
+                    <nav>
+                        <div class="items__portfolio ">
+                            <div class="row portfolio__items">
+                                <p class="item__portfolio active" data-name="all" >Tout</p>
+                                <p class="item__portfolio" data-name="portrait">Portrait</p>
+                                <p class="item__portfolio" data-name="family">Famille</p>
+                            </div>
+                
+                            <div class="row portfolio__items ">
+                                <p class="item__portfolio" data-name="baby">Bébé</p>
+                                <p class="">Choisissez la catégorie</p>
+                                <p class="item__portfolio" data-name="couple">Couple</p>
+                            </div>
+                
+                            <div class="row portfolio__items">
+                                <p class="item__portfolio" data-name="wedding">Mariage</p>
+                                <p class="item__portfolio" data-name="baptism">Baptême</p>
+                                <p class="item__portfolio" data-name="pregnancy">Grossesse</p>
+                            </div>
+                
+                        </div>
+                    </nav>
+                </section>  
             </div>
     </header>
 
     
-    <section class="wrapper ">
-        <nav>
-            <div class="items__portfolio">
-                <span class="item__portfolio active" data-name="all">Tout</span>
-                <span class="item__portfolio" data-name="portrait">Portrait</span>
-                <span class="item__portfolio" data-name="family">famille</span>
-                <span class="item__portfolio" data-name="baby">Bébé</span>
-                <span class="item__portfolio" data-name="couple">Couple</span>
-                <span class="item__portfolio" data-name="wedding">Mariage</span>
-                <span class="item__portfolio" data-name="baptism">Baptême</span>
-                <span class="item__portfolio" data-name="pregnancy">Grossesse</span>
-            </div>
-        </nav>
+    <section class=" test">
 <!-- filter images -->
-        <div class="gallery">
+        <div class=" gallery row">
 
+            
             <!-- Category BAPTISM-->
 
-            <div class="image" data-name="baptism"><span><img 
-                src="img/bapteme/photo-bapteme-1-250x166px.jpg" alt="" srcset=""  id=""></span></div>
+                <div class="image img-fluid " data-name="baptism"><img 
+                    src="img/bapteme/photo-bapteme-1-250x166px.jpg" alt="" srcset=""  id=""></div>
 
-            <!-- Category BABY-->
-            <div class="image" data-name="baby"><span><img 
-                src="img/bebe/photo-bebe-1-250x166px.jpg" alt="" srcset="" id=""></span></div>
+                <!-- Category BABY-->
+                <div class="image img-fluid " data-name="baby"><img 
+                    src="img/bebe/photo-bebe-1-250x166px.jpg" alt="" srcset="" id=""></div>
 
-            <!-- Category COUPLE-->
-            <div class="image" data-name="couple"><span><img 
-                src="img/couple/photo-couple-1-250x166px.jpg" alt="" srcset=""  id=""></span></div>
+                <!-- Category COUPLE-->
+                <div class="image img-fluid " data-name="couple"><img 
+                    src="img/couple/photo-couple-1-250x166px.jpg" alt="" srcset=""  id=""></div>
 
-            <!-- Category FAMILLY-->
-            <div class="image" data-name="family"><span><img 
-                src="img/famille/photo-famille-1-250x166px.jpg" alt="" srcset=""  id=""></span></div>
+                <!-- Category FAMILLY-->
+                <div class="image img-fluid" data-name="family"><img 
+                    src="img/famille/photo-famille-1-250x166px.jpg" alt="" srcset=""  id=""></div>
 
-            <!-- Category PREGNANCY -->
-            <div class="image" data-name="pregnancy"><span><img 
-                src="img/grossesse/photo-grossesse-1-250x165px.jpg" alt="" srcset=""  id=""></span></div>
+                <!-- Category PREGNANCY -->
+                <div class="image img-fluid" data-name="pregnancy"><img 
+                    src="img/grossesse/photo-grossesse-1-250x165px.jpg" alt="" srcset=""  id=""></div>
 
-            <!-- Category WEDDING -->
-            <div class="image" data-name="wedding"><span><img class="photos"
-                src="img/mariage/photo-mariage-1-250x351px.jpg" alt="" srcset=""  id=""></span></div>
+                <!-- Category WEDDING -->
+                <div class="image img-fluid" data-name="wedding"><img class="photos"
+                    src="img/mariage/photo-mariage-1-250x351px.jpg" alt="" srcset=""  id=""></div>
 
-            <!-- Category PORTRAIT -->
-            <div class="image" data-name="portrait"><span><img class="photos"
-                src="img/portrait/photo-portrait-1-250x366px.jpg" alt="" srcset=""  id=""></span></div>
+                <!-- Category PORTRAIT -->
+                <div class="image img-fluid" data-name="portrait"><img class="photos"
+                    src="img/portrait/photo-portrait-1-250x366px.jpg" alt="" srcset=""  id=""></div>
 
-
-
-
+            </div>
         </div>
 
     </section>
@@ -123,7 +131,6 @@
 <!--  REVOIR LE FOOTER => responsive-->
 <footer class="container">
     <section class=" row accueil__footer__contact container  ">
-      
             <div class="contact__url__tel col-12  right">
                 <h4>Contactez-moi <em>!</em> </h4>
                 <p>
