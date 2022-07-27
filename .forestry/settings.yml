@@ -5,23 +5,8 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: tarif-prestation.html
-  label: Tarifs et Prestations
-  create: all
-  match: "**/*"
-- type: directory
-  path: contact.html
-  label: Contact
-  create: all
-  match: "**/*"
-- type: directory
-  path: portfolio
-  label: Portfolio
-  create: all
-  match: "**/*"
-- type: directory
-  path: accueil
-  label: Accueil
+  path: pages
+  label: Pages
   create: all
   match: "**/*"
 upload_dir: uploads
