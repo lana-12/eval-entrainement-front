@@ -1,0 +1,20 @@
+---
+label: Contact
+hide_body: true
+fields:
+- name: titre
+  type: text
+  config:
+    required: false
+  label: Titre
+- name: textContact
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Ajouter du texte ici....
+pages:
+- pages/test2.md
