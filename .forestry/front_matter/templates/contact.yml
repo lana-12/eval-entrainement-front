@@ -16,5 +16,3 @@ fields:
     schema:
       format: markdown
   label: Ajouter du texte ici....
-pages:
-- pages/test2.md

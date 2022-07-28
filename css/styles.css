@@ -37,30 +37,9 @@ ul {
   margin-left: 0px;
 }
 
-body {
-  height: 100%;
-  width: 100vw;
-  font-family: "Satisfy", cursive;
-}
-
-h1 {
-  color: #fff;
-  font-size: 4.5em;
-}
-
 img {
   max-width: 100%;
   height: auto;
-}
-
-.nav-link {
-  color: #fff;
-  font-size: 1.3em;
-}
-
-nav .nav-link:hover, .reseau2:hover {
-  color: rgba(251, 138, 1, 0.8431372549);
-  font-weight: 900;
 }
 
 .header__accueil {
@@ -73,12 +52,6 @@ nav .nav-link:hover, .reseau2:hover {
 
 .header__accueil__title {
   margin-top: 180px;
-}
-.header__accueil__title p {
-  font-size: 2.5em;
-  color: #fff;
-  padding-top: 40px;
-  font-weight: bolder;
 }
 
 .header__portfolio {
@@ -115,14 +88,12 @@ nav .nav-link:hover, .reseau2:hover {
   background: grey url("../../../img/bg-tarifEtPrestation.jpg");
   background-size: cover;
   background-position: center;
-  margin-bottom: 60px;
 }
 
 .header__tarifEtPrestation__title {
   color: #fff;
   margin: auto;
   padding-bottom: 80px;
-  padding-top: 20px;
 }
 
 footer {
@@ -131,32 +102,40 @@ footer {
   color: #fff;
 }
 
-.footer__contact {
-  padding: 0px;
-  margin: 0px;
-  padding-top: 50px;
+.accueil__footer__contact {
   display: flex;
-  text-align: right;
+  flex-direction: columns;
 }
 
-.footer__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
+.footer__logo img {
+  width: 300px;
+  height: auto;
+}
+
+.contact__url__tel {
+  margin: 0px;
+}
+
+.contact__url__tel h4 {
+  margin-bottom: 20px;
+}
+
+.footer__reseaux__sociaux {
+  margin-top: 50px;
 }
 
 .reseau2 {
   font-size: 23px;
 }
 
-footer a:hover, .reseau2:hover {
+footer a:hover,
+.reseau2:hover {
   color: rgba(251, 138, 1, 0.8431372549);
   font-weight: 900;
 }
 
-.footer__reseaux__sociaux {
-  margin: 50px 0px;
+.accueil__footer__menuNavigation {
+  margin-top: 50px;
 }
 
 .accueil__footer__menuNavigation li {
@@ -173,45 +152,6 @@ footer a:hover, .reseau2:hover {
   font-size: 0.8em;
 }
 
-/********MEDIA QUERY POUR ECRAN 576PX  ***********/
-/******min-width 576px**************/
-@media screen and (min-width: 576px) {
-  .footer__contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-  }
-  .footer__logo {
-    padding-left: 0px auto;
-  }
-  .contact__url__tel, .footer__reseaux__sociaux {
-    line-height: 2.5em;
-  }
-  .footer__logo, .accueil__footer__menuNavigation {
-    border-left: solid 1px white;
-  }
-  .footer__reseaux__sociaux, .accueil__footer__menuNavigation {
-    text-align: center;
-    margin-top: 50px;
-  }
-}
-/********MEDIA QUERY POUR ECRAN 992PX  *********** */
-/******min-width 992px**************/
-@media screen and (min-width: 992px) {
-  .footer__contact {
-    display: flex;
-    text-align: center;
-  }
-  .footer__logo {
-    padding-bottom: 5px;
-    border-right: solid 1px white;
-  }
-  .accueil__footer__menuNavigation {
-    margin-top: 0px;
-    line-height: 2em;
-  }
-}
 .form__contact {
   margin-top: 50px;
   padding-top: 20px;
@@ -223,15 +163,14 @@ footer a:hover, .reseau2:hover {
 
 .btn__section__accueil {
   background-color: #5B696B;
-  color: #fff;
+  color: white;
   box-shadow: 0px 5px 20px #080a0a;
   margin-top: 20px;
-  font-size: 1.1em;
+  /* btn menu*/
 }
 
-/* btn menu navBar*/
 .custom-toggler.navbar-toggler {
-  border: solid black 1px;
+  border: solid white 2px;
   margin-right: 10px;
 }
 
@@ -239,7 +178,6 @@ footer a:hover, .reseau2:hover {
   background-color: rgba(251, 138, 1, 0.8431372549);
   color: #fff;
   margin: 30px;
-  font-size: 1.3em;
 }
 
 .section__accueil__about {
@@ -249,15 +187,13 @@ footer a:hover, .reseau2:hover {
 }
 
 .title_presentation {
-  margin-bottom: 30px;
-  font-size: 1.6em;
+  margin-bottom: 50px;
 }
 
 .body_presentation {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.3em;
 }
 
 .accueil_photo_charles {
@@ -276,14 +212,6 @@ footer a:hover, .reseau2:hover {
   height: auto;
   background: #fff;
 }
-.background__accueil__prestation h3 {
-  font-size: 1.5em;
-  padding-top: 20px;
-  padding-bottom: 5px;
-}
-.background__accueil__prestation p {
-  font-size: 1.2em;
-}
 
 .galerie__accueil__prestation {
   display: flex;
@@ -295,7 +223,6 @@ footer a:hover, .reseau2:hover {
 
 .card__accueil__title {
   color: #fff;
-  font-size: 1.4em;
 }
 
 .card__accueil__prestations {
@@ -307,6 +234,7 @@ footer a:hover, .reseau2:hover {
   height: auto;
   box-shadow: 0px 5px 20px #080a0a;
 }
+
 .card__accueil__prestations img {
   width: 200px;
   height: 300px;
@@ -324,6 +252,7 @@ footer a:hover, .reseau2:hover {
   position: relative;
   overflow: hidden;
 }
+
 .card__accueil__img img {
   width: 150%;
   position: absolute;
@@ -346,9 +275,6 @@ footer a:hover, .reseau2:hover {
   box-shadow: 0px 5px 50px #080a0a;
   border: solid #5B696B;
 }
-.section__accueil__info h4 {
-  font-size: 1.5em;
-}
 
 .portfolio__items {
   display: flex;
@@ -357,19 +283,18 @@ footer a:hover, .reseau2:hover {
 
 .item__portfolio {
   padding: 7px 10px;
-  font-size: 1.4em;
+  font-size: 18px;
   font-weight: 500;
-  color: #fff;
+  color: black;
   border: 2px solid;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.items__portfolio .active,
-.items__portfolio .item__portfolio:hover {
-  color: rgba(251, 138, 1, 0.8431372549);
-  border-color: #fff;
+nav .items__portfolio .active,
+nav .items__portfolio .item__portfolio:hover {
+  color: #fff;
   background: #5B696B;
 }
 
@@ -379,7 +304,7 @@ footer a:hover, .reseau2:hover {
   margin-left: 10%;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
   background-color: rgba(251, 138, 1, 0.8431372549);
   box-shadow: 0px 5px 25px #080a0a;
   border-radius: 5px;
@@ -389,6 +314,7 @@ footer a:hover, .reseau2:hover {
 .image {
   padding: 7px;
 }
+
 .image img {
   border: solid 2px #fff;
   width: 150px;
@@ -398,16 +324,14 @@ footer a:hover, .reseau2:hover {
   overflow: hidden;
   transition: all 0.3s ease;
 }
+
 .image.hide {
   display: none;
 }
+
 .image.show {
   -webkit-animation: animate 0.4s ease;
           animation: animate 0.4s ease;
-}
-
-.image:hover img {
-  transform: scale(1.1);
 }
 
 @-webkit-keyframes animate {
@@ -427,6 +351,10 @@ footer a:hover, .reseau2:hover {
     transform: scale(1);
   }
 }
+.image:hover img {
+  transform: scale(1.1);
+}
+
 .bg__tarifEtPrestation {
   background-color: rgba(251, 138, 1, 0.8431372549);
   margin: 0px;
@@ -434,7 +362,7 @@ footer a:hover, .reseau2:hover {
 
 .bg__prestation {
   background-color: #fff;
-  color: black;
+  color: #5B696B;
   width: 80%;
   height: auto;
   margin: auto;
@@ -442,15 +370,6 @@ footer a:hover, .reseau2:hover {
 
 .text__top {
   padding: 20px 40px;
-}
-.text__top h2 {
-  font-size: 2.7em;
-}
-.text__top h3 {
-  font-size: 2.3em;
-}
-.text__top p {
-  font-size: 1.2em;
 }
 
 .cards__prestations {
@@ -464,11 +383,10 @@ footer a:hover, .reseau2:hover {
 .card__prestation {
   background-color: #5B696B;
   width: 18rem;
-  height: 18rem;
+  height: 16rem;
   margin: 20px;
   color: #fff;
   box-shadow: 0px 5px 25px #080a0a;
-  font-size: 1.1em;
 }
 
 .card-subtitle {
@@ -477,18 +395,9 @@ footer a:hover, .reseau2:hover {
 
 .card-link:hover {
   color: rgba(251, 138, 1, 0.8431372549);
-  font-weight: 70000;
+  font-weight: 900;
 }
 
 .card-footer {
   border-color: rgba(251, 138, 1, 0.8431372549);
-}
-
-.contact__intro {
-  margin-top: 30px;
-  font-size: 1.2em;
-}
-
-label {
-  color: black;
 }/*# sourceMappingURL=styles.css.map */
