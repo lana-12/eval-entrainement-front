@@ -1,0 +1,74 @@
+footer
+    margin-top: 50px
+    background-color: $grey
+    color: $white
+
+.footer__contact
+    padding: 0px
+    margin: 0px
+    padding-top: 50px
+    display: flex
+    text-align: right
+
+.footer__logo
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-top: 20px
+
+.reseau2
+    font-size: 23px
+
+footer a:hover, .reseau2:hover
+    color: $oranger
+    font-weight: 900
+
+.footer__reseaux__sociaux
+    margin: 50px 0px
+
+.accueil__footer__menuNavigation li
+    padding: 10px
+    
+//copyright
+.separator__footer
+    height: 1px
+    border: none
+    background: $oranger
+    
+.copyright
+    font-size: 0.8em
+
+    
+/********MEDIA QUERY POUR ECRAN 576PX  ***********/
+/******min-width 576px**************/
+@include media($sm)
+    .footer__contact
+        display: flex
+        justify-content: center
+        align-items: center
+        padding-top: 50px
+    .footer__logo
+        padding-left: 0px auto
+    .contact__url__tel, .footer__reseaux__sociaux
+        line-height: 2.5em
+    .footer__logo, .accueil__footer__menuNavigation
+        border-left: solid 1px white
+    .footer__reseaux__sociaux, .accueil__footer__menuNavigation
+        text-align: center
+        margin-top: 50px
+
+/********MEDIA QUERY POUR ECRAN 992PX  ***********
+/******min-width 992px**************/
+@include media($lg)
+    .footer__contact
+        display: flex
+        text-align: center
+    
+    .footer__logo
+        padding-bottom: 5px
+        border-right: solid 1px white
+    
+    .accueil__footer__menuNavigation
+        margin-top: 0px
+        line-height: 2em
+
